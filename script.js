@@ -36,10 +36,14 @@ function copy() {
 
   btnCopy.innerHTML = "Copiado com sucesso!";
   btnCopy.style.backgroundColor = "#00ff00";
+  btnCopy.style.color = "#fff";
+  btnCopy.style.border = "none";
 
   setTimeout(() => {
     btnCopy.innerHTML = "Copiar";
     btnCopy.style.backgroundColor = "#FFFFFF";
+    btnCopy.style.color = "#0A3871";
+    btnCopy.style.border = "1px solid #0A3871";
   }, 2000);
 
 
