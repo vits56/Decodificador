@@ -28,10 +28,23 @@ function decryption() {
 
 function copy() {
   const copyText = document.getElementById("out-text");
+  const btnCopy = document.getElementById("btn-copy");
 
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(copyText.value);
+
+  btnCopy.innerHTML = "Copiado com sucesso!";
+  btnCopy.style.backgroundColor = "#00ff00";
+
+  setTimeout(() => {
+    btnCopy.innerHTML = "Copiar";
+    btnCopy.style.backgroundColor = "#FFFFFF";
+  }, 2000);
+
+
+
+
 }
 
 function limpar() {
