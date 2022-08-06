@@ -11,33 +11,53 @@
 
 <body>
 
-  <div class="container">
+  <header>
 
-    <main>Decodificador</main>
-
-    <div id="content1">
-      <form action="#">
-        <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui"
-          rows="4" cols="50"></textarea>
-        <input class="btn" type="button" value="Criptografar" id="btn-cripto">
-        <input class="btn" type="button" value="Descriptografar" id="btn-descripto">
-      </form>
+    <div class="caixa">
+      <img src="image/Vector.svg" alt="">
+      <h1>Decodificador</h1>
     </div>
 
-    <div id="content2">
-      <textarea class="text-input" type="text" name="msg" id="msg" rows="4" cols="50" readonly></textarea>
-      <input class="btn" type="button" value="Copiar" id="btn-copy">
-      <input class="btn" type="button" value="Apagar" id="btn-copy">
+  </header>
+
+  <main>
+
+    <form>
+
+      <div class="box-one">
+        <label for="textInput"></label>
+        <textarea name="textInput" id="input-text" maxlength="1500" spellcheck="false" placeholder="Digite o seu texto"
+          autocomplete="off" oninput="changeText(this.value)" required></textarea>
+      </div>
+
+      <div class="cripto-btn">
+        <input type="button" value="Criptografar" id="btn-cryptography" onclick="cripto()">
+        <input type="button" value="Descriptografar" id="btn-decryption" onclick="descripto()">
+      </div>
+
+    </form>
+
+    <div class="box-two">
+
+      <div class="out-box flipped">
+        <textarea id="out-text" disabled></textarea>
+      </div>
+
+      <div class="btn-copy">
+        <button id="btn-copy" onclick="copy()">Copiar</button>
+      </div>
+
     </div>
 
-  </div>
+  </main>
+
+  <footer class="footer">
+
+    <p>Made with ❤️ by <a href="https://github.com/vits56">Bruno Bastos Duarte</a></p>
+
+  </footer>
 
   <script src="script.js"></script>
-
-
-  <footer>
-    <p>Desenvolvido por <a href="https://github.com/vits56">Bruno</a></p>
-  </footer>
 
 </body>
 

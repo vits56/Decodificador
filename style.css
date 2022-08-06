@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-collapse: 0;
+  border: none;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+  background-color: #E5E5E5;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+
+}
+
+header {
+  background-color: #D8DFE8;
+  height: 100px;
+}
+
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+
+}
+
+.caixa img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100px;
+  right: 900px;
+  z-index: -1;
+}
+
+h1 {
+  color: #0A3871;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin: 25 25 25 15px;
+}
+
+main {
+  height: 76vh;
+}
+
+/* Container para Digitar o Texto */
+main {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 70%;
+  height: 90vh;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+}
+
+form {
+  height: 75vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.box-one {
+  width: 100%;
+  height: 71vh;
+}
+
+#input-text {
+  padding: 6px;
+  outline: none;
+  width: 95%;
+  height: 65vh;
+  resize: none;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #E5E5E5;
+
+}
+
+#warning {
+  width: 100%;
+}
+
+.cripto-btn {
+  margin-top: 20px;
+}
+
+#btn-cryptography {
+  height: 67px;
+  width: 250px;
+  border-radius: 24px;
+  outline: none;
+  background-color: #0A3871;
+  font-family: 'Inter';
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 21px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#btn-decryption {
+  height: 67px;
+  width: 250px;
+  border-radius: 24px;
+  outline: none;
+  background-color: #D8DFE8;
+  font-family: 'Inter';
+  font-style: normal;
+  color: #0A3871;
+  font-weight: 400;
+  font-size: 21px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer {
+  background: #D8DFE8;
+  font-family: 'Inter';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 22px;
+  height: 12vh;
+
+}
+
+footer p a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+/* Container do Texto Codificado*/
+.box-two {
+  height: 75vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+
+}
+
+.out-box {
+  width: 100%;
+  height: 71vh;
+}
+
+#out-text {
+  font-size: 23px;
+  font-weight: 600;
+  padding: 6px;
+  background-color: white;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  text-transform: lowercase;
+  overflow-y: auto;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  resize: none;
+  outline: none;
+  text-align: center;
+  width: 95%;
+  height: 65vh;
+}
+
+.flipped {
+  direction: rtl;
+}
+
+.btn__copy {
+  margin-top: 18px;
+}
+
+#btn-copy {
+  height: 67px;
+  width: 250px;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter';
+  font-style: normal;
+  color: #0A3871;
+  outline: none;
+  font-weight: 400;
+  background-color: white;
+  font-size: 21px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
