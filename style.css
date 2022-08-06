@@ -17,31 +17,12 @@ body {
 
 }
 
-header {
-  background-color: #D8DFE8;
-  height: 100px;
-}
-
-.caixa {
-  position: relative;
-  width: 940px;
-  margin: 0 auto;
-
-}
-
-.caixa img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 100px;
-  right: 900px;
-  z-index: -1;
-}
-
 h1 {
+  margin-top: 35px;
   color: #0A3871;
-  font-weight: bold;
+  font-family: 'Inter', sans-serif;
   font-size: 50px;
+  font-weight: bold;
   text-align: center;
   margin: 25 25 25 15px;
 }
@@ -56,7 +37,7 @@ main {
   margin: 0 auto;
   margin-top: 50px;
   width: 70%;
-  height: 90vh;
+  height: 85vh;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-start;
@@ -138,14 +119,14 @@ form {
 }
 
 footer {
-  background: #D8DFE8;
+  background: #244772;
   font-family: 'Inter';
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   font-size: 22px;
-  height: 12vh;
+  height: 4vh;
 
 }
 
