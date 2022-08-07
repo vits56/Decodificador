@@ -54,6 +54,9 @@ function copy() {
 function limpar() {
   const text = document.querySelector("textarea").value;
   const outText = document.getElementById("out-text");
+  const textArea = document.getElementById("input-text");
+
+  textArea.value = "";
 
 
   outText.innerHTML = "";
