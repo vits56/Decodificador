@@ -46,13 +46,16 @@ function copy() {
     btnCopy.style.border = "1px solid #0A3871";
   }, 2000);
 
+
+
+
 }
 
 function limpar() {
   const text = document.querySelector("textarea").value;
   const outText = document.getElementById("out-text");
 
+
   outText.innerHTML = "";
   text.innerHTML = "";
-
 }
