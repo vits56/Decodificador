@@ -1,27 +1,17 @@
-const text = document.querySelector("textarea").value;
-const outText = document.getElementById("out-text");
-const inputText = document.querySelector("input-text");
-
 function onlyLetters() {
   const text = document.querySelector("textarea").value;
   const outText = document.getElementById("out-text");
 
-  if (text.match(/[0-9]/g)) {
-    outText.innerHTML = "Não são permitidos números";
+  if (text.match(/[A-Z]/g) || outText.match(/[A-Z]/g)) {
+    outText.innerHTML = "";
+    alert("Não aceita letras maiusculas");
   }
 
-  if (text.match(/[^a-z]/g)) {
-    outText.innerHTML = "Não são permitidos caracteres especiais";
+  if (text.match(/[^a-z]/gi) || outText.match(/[^a-z]/gi)) {
+    outText.innerHTML = "";
+    alert("Não aceita caracteres especiais");
   }
 
-  if (text.match(/[áàãâä]/g)) {
-    outText.innerHTML = "Não são permitidos acentos";
-  }
-
-  if (text.match(/[A-Z]/g)) {
-    outText.innerHTML = "Não são permitidas letras maiúsculas";
-  }
-  
 }
 
 function changeText() {
@@ -35,9 +25,9 @@ function cryptography() {
   const text = document.querySelector("textarea").value;
   const secondText = document.getElementById("out-text");
 
-  const resultCript = text.replace(/[e]/gi, 'enter').replace(/[i]/gi, 'imes').replace(/[a]/gi, 'ai').replace(/[o]/gi, 'ober').replace(/[u]/gi, 'ufat');
+  const resultCriptography = text.replace(/[e]/gi, 'enter').replace(/[i]/gi, 'imes').replace(/[a]/gi, 'ai').replace(/[o]/gi, 'ober').replace(/[u]/gi, 'ufat');
 
-  secondText.innerHTML = resultCript;
+  secondText.innerHTML = resultCriptography;
   onlyLetters();
 }
 
@@ -45,10 +35,11 @@ function decryption() {
   const secondText = document.getElementById("out-text").value;
   const outText = document.getElementById("out-text");
 
-  const resultDes = secondText.replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ai/gi, 'a').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
+  const resultDecryption = secondText.replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ai/gi, 'a').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
 
-  outText.innerHTML = resultDes;
+  outText.innerHTML = resultDecryption;
   onlyLetters();
+
 }
 
 function copy() {
@@ -71,9 +62,6 @@ function copy() {
     btnCopy.style.border = "1px solid #0A3871";
   }, 2000);
 
-
-
-
 }
 
 function limpar() {
@@ -83,4 +71,5 @@ function limpar() {
 
   outText.innerHTML = "";
   text.innerHTML = "";
+
 }
