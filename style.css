@@ -112,7 +112,14 @@ form {
   font-weight: 400;
   font-size: 21px;
   cursor: pointer;
+  transition: 1s all;
   margin-right: 20px;
+}
+
+#btn-cryptography:hover {
+  background-color: #041933;
+  transform: scale(1.1);
+
 }
 
 #btn-decryption {
@@ -127,7 +134,14 @@ form {
   font-weight: 400;
   font-size: 21px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 1s all;
+  
+}
+
+#btn-decryption:hover {
+  background-color: #041933;
+  color: #FFFFFF;
+  transform: scale(1.1);
 }
 
 footer {
@@ -188,7 +202,6 @@ footer p a {
   direction: rtl;
 }
 
-
 #btn-copy {
   height: 67px;
   width: 250px;
@@ -203,8 +216,14 @@ footer p a {
   background-color: white;
   font-size: 21px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 1s all;
 
+}
+
+#btn-copy:hover {
+  background-color: #041933;
+  color: white;
+  transform: scale(1.1);
 }
 
 #btn-copy {
@@ -225,5 +244,11 @@ footer p a {
   background-color: #D8DFE8;
   font-size: 21px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 1s all;
+}
+
+#btn-clear:hover {
+  background-color: #041933;
+  color: #FFFFFF;
+  transform: scale(1.1);
 }
