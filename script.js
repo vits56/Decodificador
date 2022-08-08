@@ -2,15 +2,21 @@ function onlyLetters() {
   const text = document.querySelector("textarea").value;
   const outText = document.getElementById("out-text");
 
-  if (text.match(/[A-Z]/g) || outText.match(/[A-Z]/g)) {
+  if (text.match(/[^a-z]/g)) {
     outText.innerHTML = "";
-    alert("Não aceita letras maiusculas");
+    alert("Não é permitido caracteres especiais");
   }
 
-  if (text.match(/[^a-z]/gi) || outText.match(/[^a-z]/gi)) {
+  if (text.match(/[áàãâä]/g)) {
     outText.innerHTML = "";
-    alert("Não aceita caracteres especiais");
+    alert("Não é permitido acentos");
   }
+
+  if (text.match(/[A-Z]/g)) {
+    outText.innerHTML = "";
+    alert("Não é permitido letras maiúsculas");
+  }
+
 
 }
 
