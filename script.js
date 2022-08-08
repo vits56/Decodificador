@@ -2,6 +2,28 @@ const text = document.querySelector("textarea").value;
 const outText = document.getElementById("out-text");
 const inputText = document.querySelector("input-text");
 
+function onlyLetters() {
+  const text = document.querySelector("textarea").value;
+  const outText = document.getElementById("out-text");
+
+  if (text.match(/[0-9]/g)) {
+    outText.innerHTML = "Não são permitidos números";
+  }
+
+  if (text.match(/[^a-z]/g)) {
+    outText.innerHTML = "Não são permitidos caracteres especiais";
+  }
+
+  if (text.match(/[áàãâä]/g)) {
+    outText.innerHTML = "Não são permitidos acentos";
+  }
+
+  if (text.match(/[A-Z]/g)) {
+    outText.innerHTML = "Não são permitidas letras maiúsculas";
+  }
+  
+}
+
 function changeText() {
   const text = document.querySelector("textarea").value;
   const outText = document.getElementById("out-text");
@@ -14,7 +36,9 @@ function cryptography() {
   const secondText = document.getElementById("out-text");
 
   const resultCript = text.replace(/[e]/gi, 'enter').replace(/[i]/gi, 'imes').replace(/[a]/gi, 'ai').replace(/[o]/gi, 'ober').replace(/[u]/gi, 'ufat');
+
   secondText.innerHTML = resultCript;
+  onlyLetters();
 }
 
 function decryption() {
@@ -24,6 +48,7 @@ function decryption() {
   const resultDes = secondText.replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ai/gi, 'a').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
 
   outText.innerHTML = resultDes;
+  onlyLetters();
 }
 
 function copy() {
