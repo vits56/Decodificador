@@ -12,66 +12,51 @@
 <body>
 
   <header>
-
     <div class="caixa">
       <h1>Decodificador</h1>
     </div>
-
   </header>
 
   <main>
 
     <form>
-
       <div class="box-one">
-
         <label for="textInput"></label>
-
         <textarea name="textInput" 
                   id="input-text" 
                   maxlength="1500" 
                   spellcheck="false"
                   placeholder="Digite o Seu Texto Aqui" 
                   autocomplete="off" 
-                  type="text" required></textarea>
-
+                  type="text" 
+                  required></textarea>
       </div>
 
       <div class="aviso">
-
         <img src="images/Vector (1).svg" alt="">
         <p>Apenas letras minúsculas e sem acento.</p>
-
       </div>
 
       <div class="cripto-btn">
-
         <input type="button" value="Criptografar" id="btn-cryptography" onclick="cryptography()">
         <input type="button" value="Descriptografar" id="btn-decryption" onclick="decryption()">
-
       </div>
-
     </form>
 
     <div class="box-two">
-
       <div class="out-box flipped">
         <textarea id="out-text" disabled></textarea>
       </div>
-
       <div class="btn-copy">
         <button id="btn-copy" onclick="copy()">Copiar</button>
         <button id="btn-clear" onclick="limpar()">Limpar</button>
       </div>
-
     </div>
 
   </main>
 
   <footer class="footer">
-
     <p>Feito com ❤️ por <a href="https://github.com/vits56">Bruno Bastos Duarte</a></p>
-
   </footer>
 
   <script src="script.js"></script>

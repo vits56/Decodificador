@@ -41,7 +41,12 @@ function decryption() {
   const secondText = document.getElementById("out-text").value;
   const outText = document.getElementById("out-text");
 
-  const resultDecryption = secondText.replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ai/gi, 'a').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
+  const resultDecryption =
+    secondText.replace(/enter/gi, 'e')
+      .replace(/imes/gi, 'i')
+      .replace(/ai/gi, 'a')
+      .replace(/ober/gi, 'o')
+      .replace(/ufat/gi, 'u');
 
   outText.innerHTML = resultDecryption;
   decryptionTextArea();
@@ -53,7 +58,12 @@ function decryptionTextArea() {
   const text = document.querySelector("textarea").value;
   const outText = document.getElementById("out-text");
 
-  const resultDecryption = text.replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ai/gi, 'a').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
+  const resultDecryption =
+    text.replace(/enter/gi, 'e')
+      .replace(/imes/gi, 'i')
+      .replace(/ai/gi, 'a')
+      .replace(/ober/gi, 'o')
+      .replace(/ufat/gi, 'u');
 
   outText.innerHTML = resultDecryption;
   onlyLetters();
