@@ -38,8 +38,19 @@ function decryption() {
   const resultDecryption = secondText.replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ai/gi, 'a').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
 
   outText.innerHTML = resultDecryption;
+  decryptionTextArea();
   onlyLetters();
 
+}
+
+function decryptionTextArea() {
+  const text = document.querySelector("textarea").value;
+  const outText = document.getElementById("out-text");
+
+  const resultDecryption = text.replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ai/gi, 'a').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
+
+  outText.innerHTML = resultDecryption;
+  onlyLetters();
 }
 
 function copy() {
