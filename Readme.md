@@ -1,24 +1,31 @@
+<div align="center">
+
 # Decodificador
 
+</div>
+
+## 🚀 link para o projeto no ar [aqui](https://vits56.github.io/Challenge-Oracle-One/)
 
 
-
-## Screenshots
+## Screenshot
 
 <div align="center" id="top"> 
   <img src="./images/screen1.png" alt="" />
 </div>
 <br/>
 
+
 # Sobre o projeto
 
 Projeto realizado durante a #oraclenextone realizado Oracle + Alura. Foi desenvolvido uma aplicação que criptografa textos, , assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
+
 
 ## 🧑‍💻 Tecnologias utilizadas
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
 
 ## Requisitos
 
@@ -33,11 +40,13 @@ Por exemplo:
 A página deve ter campos para inserção do texto a ser criptografado ou descriptografado, e a pessoa usuária deve poder escolher entre as duas opções
 O resultado deve ser exibido na tela.
 
+
 ## Extras
 
 - Foi adicionado um botão que copie o texto criptografado/descriptografado para a área de transferência - ou seja, que tenha a mesma funcionalidade do `ctrl+C` ou da opção "copiar" do menu dos aplicativos.
 
 - Foi adicionado um botão que limpa o campo de texto codificado.
+
 
 # Executando a aplicação
 
@@ -48,6 +57,7 @@ Primeiramente clone o repositório para sua maquina ou faça o 'download' em for
 Após basta abrir a pasta e dar dois cliques no arquivo:
 
     index.html
+
 
 # Autor
 
