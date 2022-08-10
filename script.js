@@ -1,22 +1,22 @@
 function onlyLetters() {
   const text = document.querySelector("textarea").value;
   const outText = document.getElementById("out-text");
-
-  if (text.match(/[^a-z]/g)) {
-    outText.innerHTML = "";
-    alert("Não é permitido caracteres especiais");
-  }
-
-  if (text.match(/[áàãâä]/g)) {
-    outText.innerHTML = "";
-    alert("Não é permitido acentos");
-  }
-
+  
   if (text.match(/[A-Z]/g)) {
     outText.innerHTML = "";
     alert("Não é permitido letras maiúsculas");
   }
 
+
+  if (text.match(/[áàãâä]/g)) {
+    outText.innerHTML = "";
+    alert("Não é permitido letras com acentos");
+  }
+
+  if (text.match(/[!@#$%¨&*()_+|~=`{}\[\]:";'<>?,.\/]/g)) {
+    outText.innerHTML = "";
+    alert("Não é permitido caracteres especiais");
+  }
 
 }
 
