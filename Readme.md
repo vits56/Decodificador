@@ -17,7 +17,7 @@
 
 # Sobre o projeto
 
-Projeto realizado durante o Oracle Next Education realizado Oracle + Alura. Foi desenvolvido uma aplicação que criptografa textos, , assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
+Projeto realizado durante o Oracle Next Education realizado pela Oracle + Alura. Foi desenvolvido uma aplicação que criptografa textos, , assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
 
 
 ## 🧑‍💻 Tecnologias utilizadas
