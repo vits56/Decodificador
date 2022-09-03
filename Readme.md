@@ -4,7 +4,7 @@
 
 </div>
 
-## 🚀 link para o projeto no ar [aqui](https://vits56.github.io/Challenge-Oracle-One/)
+## 🚀 link para o projeto no ar [aqui](https://vits56.github.io/Decodificador/)
 
 
 ## Screenshot
